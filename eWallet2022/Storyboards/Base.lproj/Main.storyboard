@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-Bold.ttf">
+            <string>Ubuntu-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -17,27 +23,66 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StartForeground" translatesAutoresizingMaskIntoConstraints="NO" id="V1W-GM-MjR">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="startForeground" translatesAutoresizingMaskIntoConstraints="NO" id="V1W-GM-MjR">
                                 <rect key="frame" x="0.0" y="0.0" width="201" height="896"/>
                             </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="top" spacingType="standard" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dqF-Ys-nq7">
+                                <rect key="frame" x="186.5" y="325" width="200.5" height="202"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appIcon" translatesAutoresizingMaskIntoConstraints="NO" id="zA1-rt-PXy">
+                                        <rect key="frame" x="0.0" y="0.0" width="60.5" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60.640000000000001" id="PaW-LI-QDp"/>
+                                            <constraint firstAttribute="height" constant="40" id="Z7Q-y6-H5Z"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="eWalle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BRc-Nk-lJC">
+                                        <rect key="frame" x="0.0" y="57.5" width="92" height="31.5"/>
+                                        <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="28"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open An Account For Digital E-Wallet Solutions.Instant Payouts. " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T9w-Ci-PZ6">
+                                        <rect key="frame" x="0.0" y="105" width="200.5" height="57.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Join For Free." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mBE-O9-Eje">
+                                        <rect key="frame" x="0.0" y="182.5" width="87" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="mBE-O9-Eje" firstAttribute="top" secondItem="T9w-Ci-PZ6" secondAttribute="bottom" constant="20" id="DNN-Bk-wau"/>
+                                    <constraint firstItem="BRc-Nk-lJC" firstAttribute="top" secondItem="zA1-rt-PXy" secondAttribute="bottom" constant="17.600000000000001" id="Int-la-eg3"/>
+                                    <constraint firstItem="T9w-Ci-PZ6" firstAttribute="top" secondItem="BRc-Nk-lJC" secondAttribute="bottom" constant="16" id="O3y-tl-nL5"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="dqF-Ys-nq7" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.484615" id="0h7-IC-SfG"/>
                             <constraint firstAttribute="bottom" secondItem="V1W-GM-MjR" secondAttribute="bottom" id="4wa-cH-IbV"/>
                             <constraint firstItem="V1W-GM-MjR" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.485507" id="L1M-vv-uSW"/>
                             <constraint firstItem="V1W-GM-MjR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Xws-aQ-PJx"/>
                             <constraint firstItem="V1W-GM-MjR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="g2B-8Z-WYa"/>
+                            <constraint firstItem="dqF-Ys-nq7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-22" id="hnM-Eb-IIP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dqF-Ys-nq7" secondAttribute="trailing" constant="27" id="jYT-Xc-ZVX"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="69"/>
+            <point key="canvasLocation" x="18.840579710144929" y="68.973214285714278"/>
         </scene>
     </scenes>
     <resources>
-        <image name="StartForeground" width="201" height="812"/>
+        <image name="appIcon" width="61" height="40"/>
+        <image name="startForeground" width="201" height="812"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
