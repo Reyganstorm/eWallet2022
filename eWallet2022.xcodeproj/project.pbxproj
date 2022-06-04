@@ -56,15 +56,47 @@
 		E8682D3F284B603B00E706BC /* eWallet2022 */ = {
 			isa = PBXGroup;
 			children = (
-				E8682D40284B603B00E706BC /* AppDelegate.swift */,
-				E8682D42284B603B00E706BC /* SceneDelegate.swift */,
-				E8682D44284B603B00E706BC /* ViewController.swift */,
-				E8682D46284B603B00E706BC /* Main.storyboard */,
-				E8682D49284B603C00E706BC /* Assets.xcassets */,
-				E8682D4B284B603C00E706BC /* LaunchScreen.storyboard */,
-				E8682D4E284B603C00E706BC /* Info.plist */,
+				E8682D54284B610200E706BC /* ViewControllers */,
+				E8682D56284B612300E706BC /* App */,
+				E8682D55284B611300E706BC /* Storyboards */,
+				E8682D57284B614100E706BC /* Resources */,
 			);
 			path = eWallet2022;
+			sourceTree = "<group>";
+		};
+		E8682D54284B610200E706BC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E8682D44284B603B00E706BC /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E8682D55284B611300E706BC /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E8682D4B284B603C00E706BC /* LaunchScreen.storyboard */,
+				E8682D46284B603B00E706BC /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		E8682D56284B612300E706BC /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E8682D40284B603B00E706BC /* AppDelegate.swift */,
+				E8682D42284B603B00E706BC /* SceneDelegate.swift */,
+				E8682D4E284B603C00E706BC /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E8682D57284B614100E706BC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E8682D49284B603C00E706BC /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,12 +321,16 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2Q7FR5CHKB;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = eWallet2022/Info.plist;
+				INFOPLIST_FILE = eWallet2022/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +340,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,12 +353,16 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2Q7FR5CHKB;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = eWallet2022/Info.plist;
+				INFOPLIST_FILE = eWallet2022/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -332,7 +372,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
