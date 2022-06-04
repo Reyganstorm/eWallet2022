@@ -15,10 +15,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Welcome View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="eWallet2022" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="WelcomeViewController" customModule="eWallet2022" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -45,13 +45,13 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open An Account For Digital E-Wallet Solutions.Instant Payouts. " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T9w-Ci-PZ6">
                                         <rect key="frame" x="0.0" y="105" width="200.5" height="57.5"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" red="0.4823529411764706" green="0.49803921568627452" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Join For Free." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mBE-O9-Eje">
                                         <rect key="frame" x="0.0" y="182.5" width="87" height="19.5"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" red="0.4823529411764706" green="0.49803921568627452" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -61,19 +61,59 @@
                                     <constraint firstItem="T9w-Ci-PZ6" firstAttribute="top" secondItem="BRc-Nk-lJC" secondAttribute="bottom" constant="16" id="O3y-tl-nL5"/>
                                 </constraints>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="eP5-7c-rA8">
+                                <rect key="frame" x="187" y="727.5" width="200" height="106"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Szx-Jf-ngS">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="jKV-Y5-rj6"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Sign in ">
+                                            <fontDescription key="titleFontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="16"/>
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" red="1" green="0.67450980390000004" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="signInButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gkT-mK-ww5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tlx-sJ-xe8">
+                                        <rect key="frame" x="0.0" y="70" width="200" height="36"/>
+                                        <color key="tintColor" red="0.10588235294117647" green="0.11372549019607843" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Create an account">
+                                            <fontDescription key="titleFontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="eP5-7c-rA8" firstAttribute="trailing" secondItem="dqF-Ys-nq7" secondAttribute="trailing" id="0Wk-Xf-M1V"/>
                             <constraint firstItem="dqF-Ys-nq7" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.484615" id="0h7-IC-SfG"/>
                             <constraint firstAttribute="bottom" secondItem="V1W-GM-MjR" secondAttribute="bottom" id="4wa-cH-IbV"/>
                             <constraint firstItem="V1W-GM-MjR" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.485507" id="L1M-vv-uSW"/>
                             <constraint firstItem="V1W-GM-MjR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Xws-aQ-PJx"/>
                             <constraint firstItem="V1W-GM-MjR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="g2B-8Z-WYa"/>
                             <constraint firstItem="dqF-Ys-nq7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-22" id="hnM-Eb-IIP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eP5-7c-rA8" secondAttribute="bottom" constant="28.5" id="jTJ-C7-pq3"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dqF-Ys-nq7" secondAttribute="trailing" constant="27" id="jYT-Xc-ZVX"/>
+                            <constraint firstItem="eP5-7c-rA8" firstAttribute="width" secondItem="dqF-Ys-nq7" secondAttribute="width" multiplier="0.997506" id="pkq-gC-JbU"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="newAccountButton" destination="tlx-sJ-xe8" id="qjn-Vg-KvU"/>
+                        <outlet property="signInButton" destination="Szx-Jf-ngS" id="83Y-Q7-vDS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
