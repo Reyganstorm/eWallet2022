@@ -10,7 +10,6 @@ import UIKit
 class MainViewController: UIViewController {
     
     private var viewModel: ViewModelProtocol!
-
     @IBOutlet var collectionView: UICollectionView!
     
     override func viewDidLoad() {
@@ -21,21 +20,7 @@ class MainViewController: UIViewController {
     }
     
     private func setupCollectionView() {
-        collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: createLayout())
-        collectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        collectionView.backgroundColor = .white
-        
-        // MARK: - Register CollectionViewCells
-        collectionView.register(UINib(nibName: "SectionOneCell", bundle: nil), forCellWithReuseIdentifier: "sectionOne")
-        
-        collectionView.register(UINib(nibName: "ButtonViewCell", bundle: nil), forCellWithReuseIdentifier: "sectionTwoButton")
-        collectionView.register(UINib(nibName: "SectionTwoCell", bundle: nil), forCellWithReuseIdentifier: "sectionTwo")
-        
-        collectionView.register(UINib(nibName: "SectionThreeCell", bundle: nil), forCellWithReuseIdentifier: "sectionThree")
-        
-        view.addSubview(collectionView)
-        
-        
+
 //        collectionView.register(HeaderForPeople.self, forSupplementaryViewOfKind: ViewController.categoryHeaderID, withReuseIdentifier: headerID )
         
         collectionView.delegate = self

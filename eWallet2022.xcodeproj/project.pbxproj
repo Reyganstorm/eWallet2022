@@ -14,13 +14,9 @@
 		E858BE44284CF9DA000FD379 /* DataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E858BE43284CF9DA000FD379 /* DataStorage.swift */; };
 		E859AFD028550ED600493A0D /* MainCompositionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E859AFCF28550ED600493A0D /* MainCompositionLayout.swift */; };
 		E859AFD62855106200493A0D /* SectionOneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E859AFD42855106200493A0D /* SectionOneCell.swift */; };
-		E859AFD72855106200493A0D /* SectionOneCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E859AFD52855106200493A0D /* SectionOneCell.xib */; };
 		E859AFDB285510E900493A0D /* ButtonViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E859AFD9285510E900493A0D /* ButtonViewCell.swift */; };
-		E859AFDC285510E900493A0D /* ButtonViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E859AFDA285510E900493A0D /* ButtonViewCell.xib */; };
 		E859AFDE2855111E00493A0D /* SectionTwoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E859AFDD2855111D00493A0D /* SectionTwoCell.swift */; };
-		E859AFE02855113700493A0D /* SectionTwoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E859AFDF2855113700493A0D /* SectionTwoCell.xib */; };
 		E859AFE32855116A00493A0D /* SectionThreeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E859AFE12855116A00493A0D /* SectionThreeCell.swift */; };
-		E859AFE42855116A00493A0D /* SectionThreeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E859AFE22855116A00493A0D /* SectionThreeCell.xib */; };
 		E859AFE6285511B300493A0D /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = E859AFE5285511B300493A0D /* Service.swift */; };
 		E859AFE8285512A100493A0D /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E859AFE7285512A100493A0D /* MainViewModel.swift */; };
 		E8682D41284B603B00E706BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8682D40284B603B00E706BC /* AppDelegate.swift */; };
@@ -46,13 +42,9 @@
 		E858BE43284CF9DA000FD379 /* DataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStorage.swift; sourceTree = "<group>"; };
 		E859AFCF28550ED600493A0D /* MainCompositionLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCompositionLayout.swift; sourceTree = "<group>"; };
 		E859AFD42855106200493A0D /* SectionOneCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionOneCell.swift; sourceTree = "<group>"; };
-		E859AFD52855106200493A0D /* SectionOneCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionOneCell.xib; sourceTree = "<group>"; };
 		E859AFD9285510E900493A0D /* ButtonViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewCell.swift; sourceTree = "<group>"; };
-		E859AFDA285510E900493A0D /* ButtonViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonViewCell.xib; sourceTree = "<group>"; };
 		E859AFDD2855111D00493A0D /* SectionTwoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTwoCell.swift; sourceTree = "<group>"; };
-		E859AFDF2855113700493A0D /* SectionTwoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionTwoCell.xib; sourceTree = "<group>"; };
 		E859AFE12855116A00493A0D /* SectionThreeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionThreeCell.swift; sourceTree = "<group>"; };
-		E859AFE22855116A00493A0D /* SectionThreeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionThreeCell.xib; sourceTree = "<group>"; };
 		E859AFE5285511B300493A0D /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		E859AFE7285512A100493A0D /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		E8682D3D284B603B00E706BC /* eWallet2022.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eWallet2022.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,9 +99,9 @@
 		E859AFCD28550E8E00493A0D /* MainViewController */ = {
 			isa = PBXGroup;
 			children = (
+				E859AFE7285512A100493A0D /* MainViewModel.swift */,
 				E858BE0D284B8533000FD379 /* MainViewController.swift */,
 				E859AFCF28550ED600493A0D /* MainCompositionLayout.swift */,
-				E859AFE7285512A100493A0D /* MainViewModel.swift */,
 			);
 			path = MainViewController;
 			sourceTree = "<group>";
@@ -126,7 +118,6 @@
 			isa = PBXGroup;
 			children = (
 				E859AFD42855106200493A0D /* SectionOneCell.swift */,
-				E859AFD52855106200493A0D /* SectionOneCell.xib */,
 			);
 			path = SectionOne;
 			sourceTree = "<group>";
@@ -136,7 +127,6 @@
 			children = (
 				E859AFD8285510C100493A0D /* ButtonView */,
 				E859AFDD2855111D00493A0D /* SectionTwoCell.swift */,
-				E859AFDF2855113700493A0D /* SectionTwoCell.xib */,
 			);
 			path = SectionTwo;
 			sourceTree = "<group>";
@@ -145,7 +135,6 @@
 			isa = PBXGroup;
 			children = (
 				E859AFE12855116A00493A0D /* SectionThreeCell.swift */,
-				E859AFE22855116A00493A0D /* SectionThreeCell.xib */,
 			);
 			path = SectionThree;
 			sourceTree = "<group>";
@@ -154,7 +143,6 @@
 			isa = PBXGroup;
 			children = (
 				E859AFD9285510E900493A0D /* ButtonViewCell.swift */,
-				E859AFDA285510E900493A0D /* ButtonViewCell.xib */,
 			);
 			path = ButtonView;
 			sourceTree = "<group>";
@@ -299,11 +287,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E859AFDC285510E900493A0D /* ButtonViewCell.xib in Resources */,
-				E859AFD72855106200493A0D /* SectionOneCell.xib in Resources */,
-				E859AFE42855116A00493A0D /* SectionThreeCell.xib in Resources */,
 				E858BE0C284B6CFB000FD379 /* Ubuntu-Bold.ttf in Resources */,
-				E859AFE02855113700493A0D /* SectionTwoCell.xib in Resources */,
 				E8682D4D284B603C00E706BC /* LaunchScreen.storyboard in Resources */,
 				E8682D4A284B603C00E706BC /* Assets.xcassets in Resources */,
 				E8682D48284B603B00E706BC /* Main.storyboard in Resources */,

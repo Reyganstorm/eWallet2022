@@ -11,13 +11,16 @@ class SectoinOneCell: UICollectionViewCell {
 
     @IBOutlet var backView: UIView!
     @IBOutlet var moneyCountLabel: UILabel!
-    @IBOutlet var button: UIButton! {
+    
+    @IBOutlet weak var buttonView: UIView!  {
         didSet {
-            button.frame = CGRect(x: 0, y: 0, width: 48, height: 48)
-            button.layer.cornerRadius = 0.5 * button.bounds.size.width
-            button.clipsToBounds = true
+            buttonView.frame = CGRect(x: 0, y: 0, width: 48, height: 48)
+            buttonView.layer.cornerRadius = 0.5 * button.bounds.size.width
+            buttonView.clipsToBounds = true
         }
     }
+    
+    @IBOutlet var button: UIButton!
 
     override func awakeFromNib() {
         super.awakeFromNib()
