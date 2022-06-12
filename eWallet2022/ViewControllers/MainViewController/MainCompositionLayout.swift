@@ -41,6 +41,9 @@ extension MainViewController {
                 
                 let section = NSCollectionLayoutSection(group: group)
                 
+                let headerItem = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: .init(widthDimension: .fractionalHeight(1), heightDimension: .absolute(85)), elementKind: HeaderView.headerID, alignment: .top)
+                section.boundarySupplementaryItems = [headerItem]
+                
                 section.orthogonalScrollingBehavior = .paging
                 return section
                 

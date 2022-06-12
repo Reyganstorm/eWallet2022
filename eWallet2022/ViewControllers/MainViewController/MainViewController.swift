@@ -21,7 +21,7 @@ class MainViewController: UIViewController {
     
     private func setupCollectionView() {
 
-//        collectionView.register(HeaderForPeople.self, forSupplementaryViewOfKind: ViewController.categoryHeaderID, withReuseIdentifier: headerID )
+//        collectionView.register(HeaderView.self, forSupplementaryViewOfKind: HeaderView.headerID, withReuseIdentifier: "headerView" )
         
         collectionView.delegate = self
         collectionView.dataSource = self
@@ -32,14 +32,33 @@ class MainViewController: UIViewController {
 
 extension MainViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     
-//    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-//        //if indexPath.section == 0 {
-//            
-//        //} else {
-//        let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: headerID, for: indexPath)
+    
+    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        
+       
+        
+            let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "headerView", for: indexPath)
+            
+            guard let typeHeaderView = header as? HeaderView else { return header}
+            
+            typeHeaderView.headerName.text = "Right"
+        
+        return typeHeaderView
+        
+//        if indexPath.section == 0 {
+//
+//            let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "headerView", for: indexPath) as! HeaderView
+//
+//            header.headerName.text = "Account Overview"
+//            return header
+//        } else {
+//            let header = collectionView.dequeueReusableSupplementaryView(ofKind: HeaderView.headerID, withReuseIdentifier: "headerView", for: indexPath) as! HeaderView
+//            header.headerName.text = "Account Overview"
 //        return header
-//        //}
-//    }
+//        }
+    }
+    
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         3

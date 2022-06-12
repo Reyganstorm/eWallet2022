@@ -25,6 +25,7 @@
 		E8682D48284B603B00E706BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8682D46284B603B00E706BC /* Main.storyboard */; };
 		E8682D4A284B603C00E706BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8682D49284B603C00E706BC /* Assets.xcassets */; };
 		E8682D4D284B603C00E706BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8682D4B284B603C00E706BC /* LaunchScreen.storyboard */; };
+		E8D34153285629E200203D83 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D34152285629E200203D83 /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		E8682D49284B603C00E706BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8682D4C284B603C00E706BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E8682D4E284B603C00E706BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8D34152285629E200203D83 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 		E858BE0F284BB493000FD379 /* ViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				E8D3415428562C8800203D83 /* Header */,
 				E859AFD32855104200493A0D /* SectionThree */,
 				E859AFD22855103A00493A0D /* SectionTwo */,
 				E859AFD12855102E00493A0D /* SectionOne */,
@@ -99,8 +102,8 @@
 		E859AFCD28550E8E00493A0D /* MainViewController */ = {
 			isa = PBXGroup;
 			children = (
-				E859AFE7285512A100493A0D /* MainViewModel.swift */,
 				E858BE0D284B8533000FD379 /* MainViewController.swift */,
+				E859AFE7285512A100493A0D /* MainViewModel.swift */,
 				E859AFCF28550ED600493A0D /* MainCompositionLayout.swift */,
 			);
 			path = MainViewController;
@@ -166,10 +169,10 @@
 		E8682D3F284B603B00E706BC /* eWallet2022 */ = {
 			isa = PBXGroup;
 			children = (
+				E8682D54284B610200E706BC /* ViewControllers */,
 				E858BE45284CFA06000FD379 /* Services */,
 				E858BE40284CF971000FD379 /* Models */,
 				E858BE0F284BB493000FD379 /* ViewCells */,
-				E8682D54284B610200E706BC /* ViewControllers */,
 				E8682D56284B612300E706BC /* App */,
 				E8682D55284B611300E706BC /* Storyboards */,
 				E8682D58284B6C4B00E706BC /* fonts */,
@@ -227,6 +230,14 @@
 				E858BE09284B6CDB000FD379 /* Ubuntu-Regular.ttf */,
 			);
 			path = fonts;
+			sourceTree = "<group>";
+		};
+		E8D3415428562C8800203D83 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				E8D34152285629E200203D83 /* HeaderView.swift */,
+			);
+			path = Header;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,6 +322,7 @@
 				E859AFE8285512A100493A0D /* MainViewModel.swift in Sources */,
 				E859AFDB285510E900493A0D /* ButtonViewCell.swift in Sources */,
 				E858BE0E284B8533000FD379 /* MainViewController.swift in Sources */,
+				E8D34153285629E200203D83 /* HeaderView.swift in Sources */,
 				E858BE11284BB4AE000FD379 /* PeopleViewCell.swift in Sources */,
 				E859AFD028550ED600493A0D /* MainCompositionLayout.swift in Sources */,
 				E858BE44284CF9DA000FD379 /* DataStorage.swift in Sources */,
